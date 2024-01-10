@@ -9,3 +9,34 @@
   line-height: 18px;
   color: var(--clr-black);
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header nav a {
+  color: var(--clr-white);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
