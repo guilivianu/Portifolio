@@ -14,6 +14,10 @@
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
   background-color: var(--clr-primary);
   width: fit-content;
 
@@ -195,12 +199,13 @@ header nav a {
 }
 
 .base-list > li {
-  padding: 1.25rem;
-  font-size: 18px;
-  font-weight: 600;
+  padding: 1rem;
 
   background-color: var(--clr-primary);
   border-radius: 3px;
+
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .servicos-list {
@@ -211,6 +216,19 @@ header nav a {
 .conhecimentos-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.conhecimentos-list > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 72px;
+  height: 72px;
+}
+
+.conhecimentos-list > li > img {
+  width: 72px;
 }
 
 /* Contato */
@@ -236,8 +254,19 @@ header nav a {
 }
 
 #contato > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
   font-size: 18px;
   font-weight: 500;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+
+  width: 2rem;
 }
 
 #contato a {
