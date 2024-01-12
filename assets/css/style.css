@@ -41,7 +41,7 @@ section {
   padding: 2rem 1.5rem;
 }
 
-section > h2 {
+section h2 {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 150%;
@@ -172,4 +172,43 @@ header nav a {
 .card > h3 {
   font-size: 18px;
   font-weight: 500;
+}
+
+/* Serviços e conhecimentos */
+
+#SeC {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+}
+
+.base-list {
+  display: flex;
+  gap: 1rem;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.base-list > li {
+  padding: 1.25rem;
+  font-size: 18px;
+  font-weight: 600;
+
+  background-color: var(--clr-primary);
+  border-radius: 3px;
+}
+
+.servicos-list {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.conhecimentos-list {
+  display: flex;
+  flex-wrap: wrap;
 }
