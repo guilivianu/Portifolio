@@ -39,6 +39,11 @@
   width: 100%;
 }
 
+.bg-dark,
+.bg-dark-header {
+  background-color: var(--clr-black);
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -53,7 +58,22 @@ section h2 {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1024px) {
+  section {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+  header {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+}
+
 /* Header */
+
+.bg-dark-header {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 header {
   display: flex;
@@ -64,8 +84,6 @@ header {
 
   background-color: var(--clr-black);
   color: var(--clr-white);
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 header h1 {
@@ -84,6 +102,13 @@ header nav a {
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav {
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
 
 /* Home */
@@ -106,7 +131,12 @@ header nav a {
 
   background-image: url("/assets/img/Darth-IMG.png");
   background-repeat: no-repeat;
+  background-position: rem;
   background-size: 300px;
+}
+
+#home > img {
+  display: none;
 }
 
 .home-heading {
@@ -128,6 +158,25 @@ header nav a {
   margin: 0;
 }
 
+@media screen and (min-width: 1024px) {
+  #home {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+  }
+
+  #home > img {
+    display: block;
+
+    width: 444px;
+    height: 444px;
+  }
+
+  .home-cta {
+    background-image: none;
+  }
+}
+
 /* Sobre */
 
 #sobre {
@@ -137,16 +186,47 @@ header nav a {
   gap: 1.25rem;
 }
 
-#sobre > img {
+.mobile-sobre > img {
+  width: 100%;
   border-radius: 5px;
 }
 
 .sobre-links {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1.5rem;
 
   width: 100%;
+}
+
+.desktop-sobre {
+  display: none;
+}
+
+.desktop-sobre > img {
+  max-width: 460px;
+  border-radius: 5px;
+}
+
+.sobre-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile-sobre {
+    display: none;
+  }
+  .desktop-sobre {
+    display: flex;
+    gap: 92px;
+  }
+
+  .desktop-sobre h2 {
+    margin: 0;
+  }
 }
 
 /* Projetos */
@@ -158,6 +238,7 @@ header nav a {
 .cards-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -166,6 +247,7 @@ header nav a {
   color: var(--clr-white);
   padding: 1.25rem;
   border-radius: 5px;
+  max-width: 250px;
 }
 
 .card > img {
@@ -176,6 +258,17 @@ header nav a {
 .card > h3 {
   font-size: 18px;
   font-weight: 500;
+}
+
+@media screen and (min-width: 1024px) {
+  #projetos {
+    align-items: center;
+  }
+
+  .cards-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 /* Serviços e conhecimentos */
@@ -199,6 +292,9 @@ header nav a {
 }
 
 .base-list > li {
+  display: flex;
+  align-items: center;
+
   padding: 1rem;
 
   background-color: var(--clr-primary);
@@ -229,6 +325,26 @@ header nav a {
 
 .conhecimentos-list > li > img {
   width: 72px;
+}
+
+@media screen and (min-width: 1024px) {
+  #SeC {
+    flex-direction: row;
+  }
+
+  #SeC > div {
+    flex-basis: 50%;
+  }
+
+  .servicos-list {
+    flex-direction: column;
+  }
+
+  .servicos-list > li {
+    justify-content: start;
+    width: 75%;
+    height: 35px;
+  }
 }
 
 /* Contato */
@@ -278,6 +394,12 @@ header nav a {
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  #contato {
+    align-items: center;
+  }
 }
 
 /* Footer */

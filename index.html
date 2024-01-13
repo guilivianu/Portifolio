@@ -12,17 +12,19 @@
     <title>Portifólio</title>
   </head>
   <body>
-    <header>
-      <h1>Portifólio</h1>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#conhecimentos">Conhecimentos</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </header>
+    <div class="bg-dark-header">
+      <header>
+        <h1>Portifólio</h1>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#conhecimentos">Conhecimentos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </header>
+    </div>
 
     <main>
       <section id="home">
@@ -37,46 +39,92 @@
             >@guilivianu
           </a>
         </div>
+
+        <img src="/assets/img/img-darth.png"" alt="" />
       </section>
 
-      <section id="sobre">
-        <h2>Sobre</h2>
-
-        <img
-          src="/assets/img/WhatsApp Image 2024-01-10 at 16.44.07.jpg"
-          alt=""
-        />
-
-        <div>
-          <p>
-            Fames enim a pharetra adipiscing. Hac gravida sit sed tellus libero
-            ridiculus. Vitae dolor integer ultricies nec mauris odio vulputate.
-            Ante enim proin faucibus suspendisse eget feugiat elit. Nisl
-            consequat pellentesque in posuere faucibus vitae, magna. Pulvinar
-            risus suspendisse sem rhoncus sagittis, viverra odio turpis tempus.
-          </p>
-          <p>
-            Tellus aliquet risus nunc egestas. Posuere libero ultricies sit ante
-            eget fusce lacus hac viverra. Porta auctor faucibus odio vitae at
-            aliquam suscipit in. Ac porttitor nibh mattis sed consequat quis.
-          </p>
-        </div>
-
-        <div class="sobre-links">
-          <a
-            class="btn w-100"
-            href="https://www.linkedin.com/in/guilherme-livianu-bb75b7270/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin fa-xl"></i>@guilivianu
-          </a>
-          <a
-            class="btn w-100"
-            href="https://www.instagram.com/guilivianu/?next=%2F"
-            target="_blank"
-            ><i class="fa-brands fa-instagram fa-xl"></i>@guilivianu
-          </a>
-        </div>
-      </section>
+      <div class="bg-dark">
+        <section id="sobre">
+          <div class="mobile-sobre">
+            <h2>Sobre</h2>
+            <img
+              src="/assets/img/WhatsApp Image 2024-01-10 at 16.44.07.jpg"
+              alt=""
+            />
+            <div class="sobre-content">
+              <p>
+                Fames enim a pharetra adipiscing. Hac gravida sit sed tellus
+                libero ridiculus. Vitae dolor integer ultricies nec mauris odio
+                vulputate. Ante enim proin faucibus suspendisse eget feugiat
+                elit. Nisl consequat pellentesque in posuere faucibus vitae,
+                magna. Pulvinar risus suspendisse sem rhoncus sagittis, viverra
+                odio turpis tempus.
+              </p>
+              <p>
+                Tellus aliquet risus nunc egestas. Posuere libero ultricies sit
+                ante eget fusce lacus hac viverra. Porta auctor faucibus odio
+                vitae at aliquam suscipit in. Ac porttitor nibh mattis sed
+                consequat quis.
+              </p>
+            </div>
+            <div class="sobre-links">
+              <a
+                class="btn w-100"
+                href="https://www.linkedin.com/in/guilherme-livianu-bb75b7270/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin fa-xl"></i>@guilivianu
+              </a>
+              <a
+                class="btn w-100"
+                href="https://www.instagram.com/guilivianu/?next=%2F"
+                target="_blank"
+                ><i class="fa-brands fa-instagram fa-xl"></i>@guilivianu
+              </a>
+            </div>
+          </div>
+          <div class="desktop-sobre">
+            <div class="sobre-left">
+              <img
+                src="/assets/img/WhatsApp Image 2024-01-10 at 16.44.07.jpg"
+                alt=""
+              />
+              <div class="sobre-links">
+                <a
+                  class="btn w-100"
+                  href="https://www.linkedin.com/in/guilherme-livianu-bb75b7270/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin fa-xl"></i>@guilivianu
+                </a>
+                <a
+                  class="btn w-100"
+                  href="https://www.instagram.com/guilivianu/?next=%2F"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram fa-xl"></i>@guilivianu
+                </a>
+              </div>
+            </div>
+            <div class="sobre-right">
+              <h2>Sobre</h2>
+              <div class="sobre-content">
+                <p>
+                  Fames enim a pharetra adipiscing. Hac gravida sit sed tellus
+                  libero ridiculus. Vitae dolor integer ultricies nec mauris
+                  odio vulputate. Ante enim proin faucibus suspendisse eget
+                  feugiat elit. Nisl consequat pellentesque in posuere faucibus
+                  vitae, magna. Pulvinar risus suspendisse sem rhoncus sagittis,
+                  viverra odio turpis tempus.
+                </p>
+                <p>
+                  Tellus aliquet risus nunc egestas. Posuere libero ultricies
+                  sit ante eget fusce lacus hac viverra. Porta auctor faucibus
+                  odio vitae at aliquam suscipit in. Ac porttitor nibh mattis
+                  sed consequat quis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <section id="projetos">
         <h2>Projetos</h2>
@@ -117,28 +165,29 @@
         >
       </section>
 
-      <section id="SeC">
-        <div id="servicos" class="servicos">
-          <h2>Serviços</h2>
-          <ul class="base-list servicos-list">
-            <li>Web development</li>
-            <li>Mobile App</li>
-            <li>Web Design</li>
-          </ul>
-        </div>
-
-        <div id="conhecimentos" class="conhecimentos">
-          <h2>Conhecimentos</h2>
-          <ul class="base-list conhecimentos-list">
-            <li><i class="fa-brands fa-html5 fa-4x"></i></li>
-            <li><i class="fa-brands fa-css3-alt fa-4x"></i></li>
-            <li><i class="fa-brands fa-square-js fa-4x"></i></li>
-            <li><i class="fa-brands fa-figma fa-4x"></i></li>
-            <li><img src="./assets/img/icon-photoshop.svg" alt="" /></li>
-            <li><i class="fa-brands fa-square-git fa-4x"></i></li>
-          </ul>
-        </div>
-      </section>
+      <div class="bg-dark">
+        <section id="SeC">
+          <div id="servicos" class="servicos">
+            <h2>Serviços</h2>
+            <ul class="base-list servicos-list">
+              <li>Web development</li>
+              <li>Mobile App</li>
+              <li>Web Design</li>
+            </ul>
+          </div>
+          <div id="conhecimentos" class="conhecimentos">
+            <h2>Conhecimentos</h2>
+            <ul class="base-list conhecimentos-list">
+              <li><i class="fa-brands fa-html5 fa-4x"></i></li>
+              <li><i class="fa-brands fa-css3-alt fa-4x"></i></li>
+              <li><i class="fa-brands fa-square-js fa-4x"></i></li>
+              <li><i class="fa-brands fa-figma fa-4x"></i></li>
+              <li><img src="./assets/img/icon-photoshop.svg" alt="" /></li>
+              <li><i class="fa-brands fa-square-git fa-4x"></i></li>
+            </ul>
+          </div>
+        </section>
+      </div>
 
       <section id="contato">
         <h2>ENTRE EM CONTATO!</h2>
